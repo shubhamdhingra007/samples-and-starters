@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "johnpapa.vscode-peacock",
+    "esbenp.prettier-vscode",
+    "mrmlnc.vscode-scss",
+    "stylelint.vscode-stylelint",
+    "gruntfuggly.todo-tree",
+    "dbaeumer.vscode-eslint",
+    "streetsidesoftware.code-spell-checker",
+    "sonarsource.sonarlint-vscode"
+  ]
+}

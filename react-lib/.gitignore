@@ -1,0 +1,38 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+
+# testing
+/coverage
+cypress/videos
+
+# production
+/build
+
+# misc
+.DS_Store
+
+# include .env files to ignore pre flight checks by react-scripts in example apps
+!packages/example/.env
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+build
+dist
+
+# JetBrains configuration files
+.idea
+
+debug.log
+
+.yalc
+yalc.lock
+
+
+### StorybookJs ###
+# gitignore template for the Storybook, UI guide for front apps
+# website: https://storybook.js.org/
+storybook-static/

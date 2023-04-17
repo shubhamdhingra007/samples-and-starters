@@ -1,0 +1,34 @@
+// {
+//   "editor.codeActionsOnSave": {
+//     "source.addMissingImports": true,
+//     "source.fixAll": true,
+//     "source.organizeImports": true
+//   },
+//   "editor.defaultFormatter": "esbenp.prettier-vscode",
+//   "editor.formatOnSave": true,
+//   "javascript.preferences.importModuleSpecifier": "shortest",
+//   "javascript.updateImportsOnFileMove.enabled": "always",
+//   "peacock.color": "#ab5d54",
+//   "typescript.preferences.importModuleSpecifier": "shortest",
+//   "typescript.updateImportsOnFileMove.enabled": "always",
+//   "workbench.colorCustomizations": {
+//     "activityBar.activeBackground": "#bc7d76",
+//     "activityBar.activeBorder": "#ab547e",
+//     "activityBar.background": "#bc7d76",
+//     "activityBar.foreground": "#15202b",
+//     "activityBar.inactiveForeground": "#15202b99",
+//     "activityBarBadge.background": "#a9d5ae",
+//     "activityBarBadge.foreground": "#15202b",
+//     "sash.hoverBorder": "#bc7d76",
+//     "statusBar.background": "#ab5d54",
+//     "statusBar.foreground": "#e7e7e7",
+//     "statusBarItem.hoverBackground": "#bc7d76",
+//     "statusBarItem.remoteBackground": "#ab5d54",
+//     "statusBarItem.remoteForeground": "#e7e7e7",
+//     "titleBar.activeBackground": "#ab5d54",
+//     "titleBar.activeForeground": "#e7e7e7",
+//     "titleBar.inactiveBackground": "#ab5d5499",
+//     "titleBar.inactiveForeground": "#e7e7e799",
+//     "commandCenter.border": "#e7e7e799"
+//   }
+// }
