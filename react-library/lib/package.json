@@ -1,11 +1,12 @@
 {
-  "name": "@sd-samples/react-lib",
-  "version": "0.1.0",
+  "name": "sd-sample-react-lib",
+  "version": "1.0.12",
   "description": "Sample react library",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts",
+  "main": "./dist/core/index.cjs.js",
+  "module": "./dist/core/index.esm.js",
   "scripts": {
     "test": "jest",
     "build": "rollup -c",
@@ -17,27 +18,20 @@
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "exports": {
-    ".": [
-      "./core/",
-      "./react/"
-    ],
     "./core": {
-      "import": "./dist/core/index.esm.js",
       "require": "./dist/core/index.cjs.js",
       "types": "./dist/core/index.d.ts",
-      "default": "./dist/core/index.esm.js"
+      "import": "./dist/core/index.esm.js"
     },
     "./legacy": {
-      "import": "./dist/legacy/index.esm.js",
       "require": "./dist/legacy/index.cjs.js",
       "types": "./dist/legacy/index.d.ts",
-      "default": "./dist/legacy/index.esm.js"
+      "import": "./dist/legacy/index.esm.js"
     },
     "./react": {
-      "import": "./dist/react/index.esm.js",
       "require": "./dist/react/index.cjs.js",
       "types": "./dist/react/index.d.ts",
-      "default": "./dist/react/index.esm.js"
+      "import": "./dist/react/index.esm.js"
     }
   },
   "repository": {
@@ -50,7 +44,7 @@
     "url": "https://github.com/samples-and-starters/react-lib/issues"
   },
   "peerDependencies": {
-    "react": "^17.0.2"
+    "react": ">17 <19"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",

@@ -1,4 +1,4 @@
-import { coreBuilder } from "@sd-samples/react-lib/core"
+import { coreBuilder } from "sd-sample-react-lib/core"
 
 const value = coreBuilder({
   key1: "string123",
