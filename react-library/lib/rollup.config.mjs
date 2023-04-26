@@ -9,7 +9,7 @@ import postcss from "rollup-plugin-postcss";
 
 export default [
     {
-        input: { core: "src/core/index.ts", legacy: "src/legacy/index.ts", react: "src/react/index.ts" },
+        input: { core: "src/core/index.ts", legacy: "src/legacy/index.ts", react: "src/react/index.ts", all: "src/index.ts" },
         external: ["react-dom"],
         output: [
             {
@@ -21,7 +21,7 @@ export default [
                 entryFileNames: "[name]/index.esm.js",
                 format: "esm",
                 dir: "dist",
-            },
+            }
         ],
         plugins: [
             peerDepsExternal(),
@@ -33,7 +33,7 @@ export default [
         ],
     },
     {
-        input: { core: "src/core/index.ts", legacy: "src/legacy/index.ts", react: "src/react/index.ts" },
+        input: { core: "src/core/index.ts", legacy: "src/legacy/index.ts", react: "src/react/index.ts", all: "src/index.ts" },
         output: [
             {
                 entryFileNames: "[name]/index.d.ts",

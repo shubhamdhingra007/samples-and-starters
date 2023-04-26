@@ -1,12 +1,10 @@
 {
   "name": "sd-sample-react-lib",
-  "version": "1.0.12",
+  "version": "1.0.24",
   "description": "Sample react library",
   "files": [
     "dist"
   ],
-  "main": "./dist/core/index.cjs.js",
-  "module": "./dist/core/index.esm.js",
   "scripts": {
     "test": "jest",
     "build": "rollup -c",
@@ -17,21 +15,45 @@
     "lint:fix": "eslint src/ --ext .js,.jsx,.ts,.tsx,.json} --fix",
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
+  "main": "dist/all/index.cjs.js",
+  "module": "dist/all/index.esm.js",
+  "types": "dist/all/index.d.ts",
   "exports": {
+    ".": {
+      "require": "./dist/all/index.cjs.js",
+      "import": "./dist/all/index.esm.js",
+      "types": "./dist/all/index.d.ts"
+    },
     "./core": {
       "require": "./dist/core/index.cjs.js",
-      "types": "./dist/core/index.d.ts",
-      "import": "./dist/core/index.esm.js"
+      "import": "./dist/core/index.esm.js",
+      "types": "./dist/core/index.d.ts"
     },
     "./legacy": {
       "require": "./dist/legacy/index.cjs.js",
-      "types": "./dist/legacy/index.d.ts",
-      "import": "./dist/legacy/index.esm.js"
+      "import": "./dist/legacy/index.esm.js",
+      "types": "./dist/legacy/index.d.ts"
     },
     "./react": {
       "require": "./dist/react/index.cjs.js",
-      "types": "./dist/react/index.d.ts",
-      "import": "./dist/react/index.esm.js"
+      "import": "./dist/react/index.esm.js",
+      "types": "./dist/react/index.d.ts"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "core": [
+        "./dist/core/index.d.ts"
+      ],
+      "legacy": [
+        "./dist/legacy/index.d.ts"
+      ],
+      "react": [
+        "./dist/react/index.d.ts"
+      ],
+      "*": [
+        "./dist/all/index.d.ts"
+      ]
     }
   },
   "repository": {
@@ -44,7 +66,7 @@
     "url": "https://github.com/samples-and-starters/react-lib/issues"
   },
   "peerDependencies": {
-    "react": ">17 <19"
+    "react": ">=17 <19"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
